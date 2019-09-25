@@ -3,5 +3,17 @@
   <groupId>com.bhoj.java.stuff</groupId>
   <artifactId>com.bhoj.java.stuff</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <description>Java Example</description>
+  <description>JAVA EXAMPLE</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>5.2.11.Final</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.oracle</groupId>
+  		<artifactId>ojdbc6</artifactId>
+  		<version>11.2.0.3</version>
+  	</dependency>
+  </dependencies>
 </project>
