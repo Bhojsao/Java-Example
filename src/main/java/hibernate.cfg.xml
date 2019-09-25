@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory>
           
-    <property name="hbm2ddl.auto">update</property>  
+    <property name="hbm2ddl.auto">create</property>  
         <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>  
         <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
         <property name="connection.username">JAVA_EXAMPLE_DB</property>  
@@ -15,6 +15,10 @@
         <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.Employee"/>
         <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.RegularEmployee"/>
         <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.ContractEmployee"/>
+        
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.Employee"/>
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.RegularEmployee"/>
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.ContractEmployee"/>
         
     </session-factory>
 </hibernate-configuration>
