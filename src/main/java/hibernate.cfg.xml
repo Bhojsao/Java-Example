@@ -12,9 +12,9 @@
         <property name="connection.password">Db12345</property>  
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
      
-        <mapping class="com.bhoj.java.stuff.hibernate.able.per.hierarchy.Employee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.able.per.hierarchy.RegularEmployee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.able.per.hierarchy.ContractEmployee"/>
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.Employee"/>
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.RegularEmployee"/>
+        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.ContractEmployee"/>
         
     </session-factory>
 </hibernate-configuration>

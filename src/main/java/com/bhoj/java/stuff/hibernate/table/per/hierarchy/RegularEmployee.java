@@ -1,4 +1,4 @@
-package com.bhoj.java.stuff.hibernate.able.per.hierarchy;
+package com.bhoj.java.stuff.hibernate.table.per.hierarchy;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
