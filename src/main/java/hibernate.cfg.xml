@@ -3,22 +3,24 @@
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-          
-    <property name="hbm2ddl.auto">create</property>  
-        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>  
-        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
-        <property name="connection.username">JAVA_EXAMPLE_DB</property>  
-        <property name="connection.password">Db12345</property>  
-        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
-     
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.Employee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.RegularEmployee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.ContractEmployee"/>
-        
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.Employee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.RegularEmployee"/>
-        <mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.ContractEmployee"/>
-        
-    </session-factory>
+	<session-factory>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="connection.username">JAVA_EXAMPLE_DB</property>
+		<property name="connection.password">Db12345</property>
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.Employee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.RegularEmployee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.hierarchy.ContractEmployee" />
+		
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.Employee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.RegularEmployee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.concrete.ContractEmployee" />
+		
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.subclass.Employee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.subclass.RegularEmployee" />
+		<mapping class="com.bhoj.java.stuff.hibernate.table.per.subclass.ContractEmployee" />
+	</session-factory>
 </hibernate-configuration>
